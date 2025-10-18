@@ -100,11 +100,16 @@
   </header>
 
   <!-- Search and categories -->
-  <div class="controls">
-    <div class="search-row" style="max-width:1200px;margin:0 auto;">
-      <input type="search" id="search" placeholder="Pesquisar no cardápio ">
-      <button class="btn" id="clear-search" title="Limpar pesquisa">🗑️</button>
-    </div>
+ <div class="controls">
+  <div class="search-row" style="max-width:1200px;margin:0 auto;position:relative;">
+    <input type="search" id="search" placeholder="Pesquisar no cardápio" style="width:100%;padding-right:40px;">
+    <button id="clear-search" title="Limpar pesquisa" 
+      style="position:absolute;right:10px;top:50%;transform:translateY(-50%);border:none;background:transparent;cursor:pointer;font-size:18px;">
+      🗑️
+    </button>
+  </div>
+</div>
+
     <div class="categories" id="categories" style="max-width:1200px;margin:0 auto;padding:0 18px;">
       <button class="cat-btn active" data-cat="Todos">Todos</button>
       <button class="cat-btn" data-cat="Lanches">Lanches</button>
@@ -578,5 +583,6 @@
 </body>
 </html>
  
+
 
 
