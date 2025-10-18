@@ -96,17 +96,16 @@
         <img src="logo.png" alt="Logo Viveres Burger" class="logo">
         <span class="site-name">𝑽í𝒗𝒆𝒓𝒆𝒔 𝑩𝒖𝒓𝒈𝒖𝒆𝒓</span>
       </div>
-      <div style="font-size:0.9rem;color:#ccc">Aberto: Segunda-Sábado 18:30–22:20</div>
     </div>
   </header>
 
   <!-- Search and categories -->
   <div class="controls">
     <div class="search-row" style="max-width:1200px;margin:0 auto;">
-      <input type="search" id="search" placeholder="Pesquisar no cardápio (ex: Supreme, Cheddar)...">
-      <button class="btn" id="clear-search" title="Limpar pesquisa">X</button>
+      <input type="search" id="search" placeholder="Pesquisar no cardápio ">
+      <button class="btn" id="clear-search" title="Limpar pesquisa">Limpar</button>
     </div>
-    <div class="categories" id="categories" style="max-width:1200px;margin:0 auto;padding:0 16px;">
+    <div class="categories" id="categories" style="max-width:1200px;margin:0 auto;padding:0 18px;">
       <button class="cat-btn active" data-cat="Todos">Todos</button>
       <button class="cat-btn" data-cat="Lanches">Lanches</button>
       <button class="cat-btn" data-cat="Bebidas">Bebidas</button>
@@ -332,7 +331,7 @@
       document.querySelectorAll('.add-to-cart').forEach(btn=>{
         btn.addEventListener('click', (e)=>{
           if(!lojaAberta){
-            alert('A loja está fechada. Funciona Seg-Sáb 18:30–22:20');
+            alert('A loja está fechada. Funciona Segunda-Sábado 18:30–22:20');
             return;
           }
           const id = parseInt(e.currentTarget.dataset.id);
